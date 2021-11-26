@@ -27,7 +27,11 @@ Route::get('halo', function () {
 
 Route::get('/coba', [Cobacontroller::class, 'index']);
 Route::get('/dashboard', [DashboardController::class, 'index']);
+
 Route::get('/user', [DashboardController::class, 'user']);
+Route::get('/tambah-user', [DashboardController::class, 'tambahUser']);
+Route::get('/edit-user', [DashboardController::class, 'editUser']);
+
 Route::get('/konten', [DashboardController::class, 'konten']);
 Route::get('/materi', [DashboardController::class, 'materi']);
 

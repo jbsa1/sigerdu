@@ -16,6 +16,16 @@ class DashboardController extends Controller
         return view('user');
     }
 
+    public function tambahUser()
+    {
+        return view('tambahUser');
+    }
+
+    public function editUser()
+    {
+        return view('editUser');
+    }
+
     public function konten()
     {
         return view('konten');

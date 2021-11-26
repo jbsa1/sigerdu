@@ -208,6 +208,7 @@
     </div>
 </main>
 
+@yield('modal')
 
 <script src="grains/graindashboard/js/graindashboard.js"></script>
 <script src="grains/graindashboard/js/graindashboard.vendor.js"></script>
@@ -224,5 +225,7 @@
     $.GDCore.components.GDChartistBar.init('.js-bar-chart');
     $.GDCore.components.GDChartistDonut.init('.js-donut-chart');
 </script>
+
+@yield('js')
 </body>
 </html>
