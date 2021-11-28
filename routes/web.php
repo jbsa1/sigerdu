@@ -28,11 +28,16 @@ Route::get('halo', function () {
 Route::get('/coba', [Cobacontroller::class, 'index']);
 Route::get('/dashboard', [DashboardController::class, 'index']);
 
+// pemain
 Route::get('/user', [DashboardController::class, 'user']);
 Route::get('/tambah-user', [DashboardController::class, 'tambahUser']);
 Route::get('/edit-user', [DashboardController::class, 'editUser']);
 
+// konten gim
 Route::get('/konten', [DashboardController::class, 'konten']);
+Route::get('/tambah-level', [DashboardController::class, 'tambahLevel']);
+Route::get('/edit-level', [DashboardController::class, 'editLevel']);
+
 Route::get('/materi', [DashboardController::class, 'materi']);
 
 Route::get('/login', [AuthController::class, 'login']);

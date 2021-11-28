@@ -31,6 +31,16 @@ class DashboardController extends Controller
         return view('konten');
     }
 
+    public function tambahLevel()
+    {
+        return view('tambahLevel');
+    }
+
+    public function editLevel()
+    {
+        return view('editLevel');
+    }
+
     public function materi()
     {
         return view('materi');
