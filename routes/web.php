@@ -38,7 +38,10 @@ Route::get('/konten', [DashboardController::class, 'konten']);
 Route::get('/tambah-level', [DashboardController::class, 'tambahLevel']);
 Route::get('/edit-level', [DashboardController::class, 'editLevel']);
 
+// Materi
 Route::get('/materi', [DashboardController::class, 'materi']);
+Route::get('/tambah-materi', [DashboardController::class, 'tambahMateri']);
+Route::get('/edit-materi', [DashboardController::class, 'editMateri']);
 
 Route::get('/login', [AuthController::class, 'login']);
 Route::get('/register', [AuthController::class, 'register']);

@@ -45,4 +45,13 @@ class DashboardController extends Controller
     {
         return view('materi');
     }
+
+    public function tambahMateri()
+    {
+        return view('tambahMateri');
+    }
+    public function editMateri()
+    {
+        return view('editMateri');
+    }
 }
